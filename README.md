@@ -1,6 +1,9 @@
-<p>This is a simple, yet nice-to-have log viewer web-app for Tomcat.</p>
+<p>This is a simple, yet nice-to-have log viewer web-app for Tomcat Server.</p>
 It simplifies browsing of the Tomcat logs, adding appropriate formatting and split content by logical parts.<br>
-The current version (1.0) assumes that you didn't change log's formatting valve in server.xml file of your Tomcat server.<br>
+Filter content of the log folder, combining common names and then available dates.
+The current version (1.0) assumes that:
+<ul><li>you didn't change log's formatting valve in server.xml file of your Tomcat server, and</li>
+  <li>log files are all located under <i>log</i> subfolder of CATALINA_BASE dir</li></ul>
 Tested with Tomcat 9, but may works with any version if underlying JDK is 1.8+.<br>
 
 <!---
