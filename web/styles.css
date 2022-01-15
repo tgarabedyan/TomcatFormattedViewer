@@ -1,0 +1,127 @@
+/* 
+    Created on : 29.12.2021, 10:05:40.
+    Author     : Toni Garabedyan
+*/
+
+th {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+tr.even td{
+    padding: 3px;
+    border-bottom: lightgray;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left: lightgray solid 1px;
+}
+
+tr.odd td{
+    padding: 3px;
+    border-bottom: lightblue;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left: lightgray solid 1px;    
+}
+
+tr.warning td{
+    background-color: lightyellow;
+}
+
+tr.severe td{
+    background-color: lightpink;
+}
+
+body {
+    margin: 10px 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+select {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0 0 0.5em;
+}
+h1 {
+    font-size: 18pt;
+    margin: 0.5em 0 0;
+}
+h2 {
+    font-size: 16pt;
+}
+h3 {
+    font-size: 13pt;
+}
+h4 {
+    font-size: 12pt;
+}
+h5 {
+    font-size: 11pt;
+}
+p {
+    font-size: 11pt
+}
+
+a img {
+    border: 0 none;
+}
+
+.curved {
+    border-radius: 10px;
+}
+
+.container {
+    padding: 10px;
+    margin: 0 0 10px;
+}
+
+#tomcat-logo {
+    width: 90px;
+    height: 90px;
+    vertical-align: center;
+}
+
+#my-logo {
+    width: 90px;
+    height: 90px;
+    vertical-align: center;
+}
+
+.button {
+    display: flow;
+    padding: 0;
+    text-align: center;
+    color: #666;
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 10pt;
+    font-weight: bold;
+    height: 36px;
+    border: none;
+    width: 200px;
+    background: url(bg-button.png) no-repeat center center;
+}
+
+#box {
+    background: #fff url(bg-middle.png) repeat-x top left;
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 10pt;
+    color: #666;
+}
+
+br.separator {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#title {
+    display: block;
+}
