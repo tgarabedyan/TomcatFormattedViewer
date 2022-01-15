@@ -1,6 +1,6 @@
-- 👋 Hi, I’m Toni Garabedyan - M.Sc. in Computer Engineering and Software Development
-- 👀 As developer I’m interested in Java SE/EE, Android and Oracle APEX. Have more than 20 years of experience in these areas and 10+ successful (and stil working) projects.
-- 📫 You can reach me on tgarabedyan71@gmail.com or look in Google PlayStore for my development brand - Gemini Studio 
+This is a simple, yet nice-to-have log viewer app for Tomcat 9+. It simplifies browsing of the Tomcat logs, adding appropriate formatting and split content by logical parts.
+The current version (1.0) assumes that you didn't change log's formatting valve in server.xml file of your Tomcat server.
+Tested with Tomcat 9, but may works with any version if underlying JDK is 1.8+.
 
 <!---
 tgarabedyan/tgarabedyan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
