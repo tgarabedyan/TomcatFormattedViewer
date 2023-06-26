@@ -107,7 +107,7 @@
                                 }
                                 out.println("<tbody>");
                                 String nextLine="";
-                                line = reader.readLine().trim();
+                                line = reader.readLine();
                                 boolean collapseZone = false;
                                 
                                 while (line!=null && (nextLine = reader.readLine()) != null) {
@@ -117,7 +117,7 @@
                                     }
                                     row++;
                                     nextLine = nextLine.trim();
-                                   
+                                    line = line.trim();
                                     if (isAccessLog)
                                         out.println(accessFormatter.formatAsHtml(line, (row%2==0?"even":"odd")));
                                     else if (isCatalinaLog)
@@ -211,14 +211,18 @@
                                     } 
 */
                                 } //while
+                                out.println("</tbody></table>");
+                                out.println("</div>");
                             }
                         }
                     }
                 %>
+
     <br class="separator" />
-    <p class="copyright">Version 1.0 is provided under GPL by Toni Garabedyan. &copy;2022</p>
+    <p class="copyright">Version 1.1 is provided under GPL by Toni Garabedyan. &copy;2022</p>
     </body>
-        <script>
+    
+    <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
 
