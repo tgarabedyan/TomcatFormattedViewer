@@ -158,58 +158,8 @@
                                                 out.print("</td></tr>");                                                
                                             }
                                         }
-                                        line = nextLine;
                                     }
-                                    /*                                    
-                                        if ((nextLine.startsWith("at ") || nextLine.startsWith("...") || nextLine.startsWith("Caused by")) || line.contains("Exception")){
-                                            if (!collapseZone) {
-                                                //Beginning of collapse zone
-                                                if (row % 2 == 0) {
-                                                    out.print("<tr class=\"even");
-                                                } else {
-                                                    out.print("<tr class=\"odd");
-                                                }
-                                                if (line.contains("WARNING")) {
-                                                    out.print(" warning");
-                                                }
-                                                if (line.contains("SEVERE")) {
-                                                    out.print(" severe");
-                                                }
-                                                out.print("\"><td>");
-                                                out.print("<button type=\"button\" class=\"collapsible\">"+line+"</button>");
-                                                collapseZone = true;
-                                                out.println("<div class=\"content\">");
-                                            } else {
-                                                // continue collapseZone
-                                                out.println(line+"</br>");
-                                            }
-                                        } else {
-                                            if (row % 2 == 0) {
-                                                out.print("<tr class=\"even");
-                                            } else {
-                                                out.print("<tr class=\"odd");
-                                            }
-                                            if (line.contains("WARNING")) {
-                                                out.print(" warning");
-                                            }
-                                            if (line.contains("SEVERE")) {
-                                                out.print(" severe");
-                                            }
-                                            if (collapseZone) {
-                                                //End of collapse zone
-                                                out.println(line);
-                                                out.print("</div></td></tr>");
-                                                collapseZone=false;
-                                            } else {
-                                                out.print("\"><td>");
-                                                out.println(line);
-                                            }
-                                            if (line.substring(0,2).matches("\\d{2}"))
-                                                collapseZone = false;
-                                        }
-                                        line = String.copyValueOf(nextLine.toCharArray());
-                                    } 
-*/
+                                    line = nextLine;                                    
                                 } //while
                                 out.println("</tbody></table>");
                                 out.println("</div>");
@@ -219,7 +169,7 @@
                 %>
 
     <br class="separator" />
-    <p class="copyright">Version 1.1 is provided under GPL by Toni Garabedyan. &copy;2022</p>
+    <p class="copyright">Version 1.2 is provided under GPL by Toni Garabedyan. &copy;2022</p>
     </body>
     
     <script>
